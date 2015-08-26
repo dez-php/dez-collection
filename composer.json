@@ -1,0 +1,22 @@
+{
+  "name": "dez-php/dez-collection",
+  "description": "Simple PHP Collection Class",
+  "keywords": ["php collection","collection","simple php collection", "dez-php collection"],
+  "authors": [
+    {
+      "name": "Ivan Gontarenko",
+      "email": "vania.gontarenko@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "type": "library",
+  "repositories": [],
+  "require": {
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dez\\": "src/"
+    }
+  }
+}
