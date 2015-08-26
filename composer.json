@@ -1,7 +1,7 @@
 {
   "name": "dez-php/dez-collection",
   "description": "Simple PHP Collection Class",
-  "keywords": ["1.0.0","php collection","collection","simple php collection", "dez-php collection" ],
+  "keywords": ["php collection","collection","simple php collection", "dez-php collection" ],
   "authors": [
     {
       "name": "Ivan Gontarenko",
