@@ -5,7 +5,8 @@
   "authors": [
     {
       "name": "Ivan Gontarenko",
-      "email": "vania.gontarenko@gmail.com"
+      "email": "vania.gontarenko@gmail.com",
+      "role": "dev"
     }
   ],
   "license": "MIT",
