@@ -178,6 +178,24 @@
             return new \ArrayIterator( $this->items );
         }
 
+        /**
+         * Transforms an under_scored_string to a camelCasedOne
+         * @param string $underScoreString
+         * @return string
+         */
+        protected function camelize( $underScoreString ) {
+            return lcfirst( implode( '', array_map( 'ucfirst', array_map( 'strtolower', explode( '_', $underScoreString ) ) ) ) );
+        }
+
+        /**
+         * Transforms a camelCasedString to an under_scored_one
+         * @param string $cameled
+         * @return string
+         */
+        protected function underscore( $cameled ) {
+            return implode( '_', array_map( 'strtolower', preg_split( '/([A-Z]{1}[^A-Z]*)/', $cameled, -1, PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY ) ) );
+        }
+
         abstract public function add( $item );
 
     }
